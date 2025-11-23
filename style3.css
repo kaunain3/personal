@@ -1,0 +1,118 @@
+.space-background {
+    background-image: url('pexels-alex-andrews-271121-5086477.jpg');
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: background-position 0.1s ease-out;
+}
+
+
+.home-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #b00000;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-family: "Lucida Console", monospace;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 20; 
+    line-height: 1.1;
+}
+
+.home-btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 900px) {
+    .home-btn {
+        padding: 7px 14px;
+        font-size: 12px;
+        top: 15px;
+        left: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .home-btn {
+        padding: 5px 10px;
+        font-size: 10px;
+        top: 10px;
+        left: 10px;
+    }
+}
+
+
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.about-card {
+    background: rgba(0, 0, 0, 0.7); 
+    border: 1px solid white;
+    padding: 40px;
+    max-width: 800px; 
+    width: 100%;
+    box-shadow: 0 0 25px rgba(176, 0, 0, 0.2); 
+    position: relative;
+}
+
+
+.about-header {
+    font-family: "Lucida Console", monospace;
+    color: #b00000;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed white;
+    padding-bottom: 15px;
+    text-shadow: 0 0 5px rgba(176, 0, 0, 0.5);
+}
+
+
+.about-text {
+    font-family: "Lucida Console", monospace;
+    color: white;
+    font-size: 18px;
+    line-height: 1.8; 
+    text-align: justify; 
+    margin: 0;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+    .about-card {
+        padding: 20px;
+        margin-top: 60px; 
+    }
+
+    .about-header {
+        font-size: 24px;
+    }
+
+    .about-text {
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: left; 
+    }
+}

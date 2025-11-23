@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>kaunain s</title>
+</head>
+<body>
+
+    <div class="space-background"></div>
+    <div class="content-wrapper">
+        <div class="top-nav">
+            <a href="projectpage.html" class="nav-btn"> Projects </a>
+            <a href="https://docs.google.com/document/d/1fRblZCLFyN0TfKOfX_q0QbW5YgQduQcaytYs-kT970o/edit?usp=sharing" class="nav-btn"> Resume </a>
+            <a href="aboutmepage.html" class="nav-btn"> About me... </a>  
+
+        </div>
+
+        <div class="hero-section">
+        <div class="hero-photo">
+            
+            <img src="kaunain_pic.jpeg" alt="Profile Photo">
+        </div>
+        
+        <div class="hero-text">
+           
+            <p class = "intro-text">
+                Hi!! Im Kaunain, a 20 yo engineer from Mumbai<br>
+                I am passionate about electronics, robotics and machine learning.<br>
+                Thanks for orbiting by! Lets make something awesome!
+            </p>
+        </div>
+    </div>
+
+        <div class="left-top-nav">  
+            <a href="index.html" class="nav-btn-left"> home </a>
+        </div>
+
+
+        
+    <div class="bottom-nav-container">
+    <div class="social-links">
+        <a href="mailto:kaunainshaikh39@gmail.com" class="social-btn">email</a>
+        <a rel="noopener" href="https://github.com/indraa7xx" target="_blank" class="social-btn">github</a>
+        <a rel ="noopener" href="https://www.linkedin.com/in/kaunain-shaikh-84678926b/" target="_blank" class="social-btn">linkedin</a>
+        <a rel="noopener" href="https://www.instagram.com/kaunain.shk/" target="_blank" class="social-btn">ig</a>
+    </div>
+</div>
+
+        
+   
+    
+ <script>
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const resumeBtn = document.getElementById('resume-link');
+
+    if (resumeBtn) {
+        resumeBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            
+            const userAgrees = confirm("You are about to leave this site to view a Google Doc. Do you want to proceed?");
+            
+            if (userAgrees) {
+                window.open('https://docs.google.com/document/d/1fRblZCLFyN0TfKOfX_q0QbW5YgQduQcaytYs-kT970o/edit?tab=t.0', '_blank');
+            }
+        });
+    }
+});
+ </script>
+    
+
+      
+</body>
+</html>
